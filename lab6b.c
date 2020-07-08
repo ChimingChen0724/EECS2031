@@ -14,7 +14,7 @@ EECS login ID: alex0724
 
 #include<stdio.h>
 #define MAXLINE 1000
-int main()
+int main(void)
     {
         int i , space;
         char str[MAXLINE];
@@ -22,7 +22,7 @@ int main()
         printf("Enter a line of characters>");
         fgets(str, MAXLINE, stdin);
         for(i=0;str[i];i++)
-            if(str[i] == ' ')
+            if((str[i] == ' ') || ( str[i] == '\t'))
                     space++;
         printf("%d\n", space);
         space=0;
