@@ -19,12 +19,12 @@ int main(void)
         int i , space;
         char str[MAXLINE];
         while ( space != EOF ){
-        printf("Enter a line of characters>");
-        fgets(str, MAXLINE, stdin);
-        for(i=0;str[i];i++)
-            if((str[i] == ' ') || ( str[i] == '\t'))
+            printf("Enter a line of characters>");
+            fgets(str, MAXLINE, stdin);
+            for(i=0;str[i];i++)
+                if((str[i] == ' ') || ( str[i] == '\t'))
                     space++;
-        printf("%d\n", space);
-        space=0;
+            printf("%d\n", space);
+            space=0;
         }
     }

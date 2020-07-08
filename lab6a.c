@@ -18,9 +18,11 @@ int main()
 {
     float inch, cm;
     while ( (inch != EOF) && (inch != 0) ){
-    printf("Enter the measurement in inches>");
-    scanf("%f", &inch);
-    cm = inch * 2.54;
-    printf("%.2f cm\n", cm);
+        printf("Enter the measurement in inches>");
+        scanf("%f", &inch);
+        if((inch != 0)){
+            cm = inch * 2.54;
+            printf("%.2f cm\n", cm);
+        }
     }
 }
