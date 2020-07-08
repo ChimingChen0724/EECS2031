@@ -17,7 +17,7 @@ EECS login ID: alex0724
 int main()
 {
     float inch, cm;
-    while ( inch != EOF ){
+    while ( (inch != EOF) && (inch != 0) ){
     printf("Enter the measurement in inches>");
     scanf("%f", &inch);
     cm = inch * 2.54;
